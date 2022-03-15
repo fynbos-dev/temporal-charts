@@ -3,7 +3,7 @@ entries:
   cassandra:
   - apiVersion: v1
     appVersion: 3.11.5
-    created: "2022-03-15T15:35:11.336112+02:00"
+    created: "2022-03-15T15:37:50.421573+02:00"
     description: Apache Cassandra is a free and open-source distributed database management
       system designed to handle large amounts of data across many commodity servers,
       providing high availability with no single point of failure.
@@ -21,12 +21,12 @@ entries:
       name: maorfr
     name: cassandra
     urls:
-    - https://fynbos-dev.github.io/helm-chart/charts/cassandra-0.14.3.tgz
+    - https://fynbos-dev.github.io/temporal-chart/charts/cassandra-0.14.3.tgz
     version: 0.14.3
   elasticsearch:
   - apiVersion: v1
     appVersion: 7.16.3
-    created: "2022-03-15T15:35:11.339933+02:00"
+    created: "2022-03-15T15:37:50.423939+02:00"
     description: Official Elastic helm chart for Elasticsearch
     digest: 3ce99330b34a754f27737701afaf7893d6f7db7207450a69e7c05818b2b2844b
     home: https://github.com/elastic/helm-charts
@@ -38,12 +38,12 @@ entries:
     sources:
     - https://github.com/elastic/elasticsearch
     urls:
-    - https://fynbos-dev.github.io/helm-chart/charts/elasticsearch-7.16.3.tgz
+    - https://fynbos-dev.github.io/temporal-chart/charts/elasticsearch-7.16.3.tgz
     version: 7.16.3
   grafana:
   - apiVersion: v1
     appVersion: 6.7.1
-    created: "2022-03-15T15:35:11.342753+02:00"
+    created: "2022-03-15T15:37:50.426112+02:00"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: 5715ddf4d5a012a7bdb1f4ef0f4d4faebef022ad12f2c9d656fbe8a17a23d5c1
     home: https://grafana.net
@@ -60,12 +60,12 @@ entries:
     sources:
     - https://github.com/grafana/grafana
     urls:
-    - https://fynbos-dev.github.io/helm-chart/charts/grafana-5.0.10.tgz
+    - https://fynbos-dev.github.io/temporal-chart/charts/grafana-5.0.10.tgz
     version: 5.0.10
   prometheus:
   - apiVersion: v2
     appVersion: 2.31.1
-    created: "2022-03-15T15:35:11.350366+02:00"
+    created: "2022-03-15T15:37:50.433598+02:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -95,12 +95,12 @@ entries:
     - https://github.com/kubernetes/kube-state-metrics
     type: application
     urls:
-    - https://fynbos-dev.github.io/helm-chart/charts/prometheus-15.1.3.tgz
+    - https://fynbos-dev.github.io/temporal-chart/charts/prometheus-15.1.3.tgz
     version: 15.1.3
   temporal:
   - apiVersion: v2
     appVersion: 1.15.2
-    created: "2022-03-15T15:35:11.334105+02:00"
+    created: "2022-03-15T15:37:50.419992+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -135,6 +135,6 @@ entries:
     - https://github.com/temporalio/temporal
     type: application
     urls:
-    - https://fynbos-dev.github.io/helm-chart/temporal-0.15.2.tgz
+    - https://fynbos-dev.github.io/temporal-chart/temporal-0.15.2.tgz
     version: 0.15.2
-generated: "2022-03-15T15:35:11.320525+02:00"
+generated: "2022-03-15T15:37:50.408055+02:00"
